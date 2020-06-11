@@ -1,6 +1,4 @@
 @startmindmap
-
-
 * VMS
 ** Roles
 *** Visitor
@@ -31,5 +29,4 @@
 **** Visitor authenticator
 *** Visitor verification
 **** Visitor Manager
-
 @endmindmap
