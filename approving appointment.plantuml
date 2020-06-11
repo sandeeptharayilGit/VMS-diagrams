@@ -1,0 +1,9 @@
+
+@startuml
+start
+floating note left: Approving an appointment
+:VMS: Notifies Host and VM by email and in app;
+:Host/VM: approves the appointment;
+:VMS: Notifies visitor email or sms;
+stop
+@enduml

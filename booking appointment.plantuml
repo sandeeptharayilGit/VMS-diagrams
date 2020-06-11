@@ -1,0 +1,32 @@
+
+@startuml
+start
+floating note left: Booking an appointment
+:Visitor: Open application url in browser;
+:Visitor: Selects google/email login;
+:Visitor: Selects Location
+(Applicable to multi location offices)
+(selects the location automatically, if there is only one);
+:Visitor: Selects Department
+(Applicable to multi Department offices)
+(selects the Department automatically, if there is only one);
+:Visitor: Selects Host;
+:Visitor: Selects Date and time;
+:VMS: Shows if selected time slot is available;
+:Visitor: Enter reason for appointment;
+:Visitor: Enter name of visitor (Prefill from account);
+:Visitor: Confirm appointment;
+:VMS: Creates appointment;
+while (Send for approval) is (Rejected)
+  :VMS: Notifies visitor email or sms;
+  :Visitor: Can change date and time and;
+endwhile (Approved)
+  :VMS: Notifies visitor by email or sms;
+  :VMS: Creates a token as QR code 
+  or a Unique 6 digit token number;
+  :VMS: provides options to
+  - print token,
+  - save as calendar invite;
+
+stop
+@enduml

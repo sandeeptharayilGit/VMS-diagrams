@@ -1,0 +1,16 @@
+
+@startuml
+start
+floating note left: Visitor on appointment
+:Visitor: Notifies VM or HOST on arrival;
+:VM: Acknowledge and sends verification code to visitor;
+:Visitor: shares code to VM;
+:VM: verify the visitor;
+:VMS: Creates a virtual badge for visitor
+(with a dynamic background);
+:VMS: Sends notification to Host about arrival of visitor;
+:HOST: initiates meeting;
+:HOST: sign off the meeting;
+floating note left: Once meeting is over
+:VM: verifies the end of appointment;
+@enduml

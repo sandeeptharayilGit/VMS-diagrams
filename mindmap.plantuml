@@ -1,0 +1,35 @@
+@startmindmap
+
+
+* VMS
+** Roles
+*** Visitor
+*** Visitor Manager(Receptionist => full access of visitor data)
+*** Host
+*** Visitor authenticator(Security at departments => Read only access of visitor data)
+*** Admin (Full access)
+** Features
+*** Appointment Management
+*** Reports
+** Actions
+*** Login
+**** Every Roles
+*** Book appointment
+**** Visitor
+**** Visitor Manager
+*** Edit appointment
+**** Visitor
+**** Visitor Manager
+**** Host
+*** Approve appointment
+**** Visitor Manager
+**** Host
+*** View appointment
+**** Visitor
+**** Visitor Manager
+**** Host
+**** Visitor authenticator
+*** Visitor verification
+**** Visitor Manager
+
+@endmindmap
